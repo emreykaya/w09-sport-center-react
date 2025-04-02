@@ -1,0 +1,279 @@
+/* TRAINERS SETTINGS */
+#trainers {
+    padding: 64px 0;
+    background-color: var(--background-color-2);
+    text-align: center;
+}
+
+/* TITLES */
+#trainers h2 {
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+/* BAR UNDER THE TITLE */
+#trainers span {
+    display: block;
+    width: 100px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    margin: 10px auto;
+}
+
+/* TEXT */
+#trainers p {
+    max-width: 600px;
+    margin: 5px auto;
+    font-weight: 600;
+}
+
+/* CONTENT CONTAINER */
+.image-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* IMAGE AREA SETTINGS */
+.image-trainer {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGE */
+.image-trainer img {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+/* BARS SETTINGS */
+.bar {
+    position: absolute;
+    background: var(--secondary-color) !important;
+    z-index: 0;
+}
+
+/* RIGHT BAR */
+.bar.right {
+    width: 6px !important;
+    height: 100px !important;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 200ms ease-in-out;
+}
+
+.image-trainer:hover .bar.right {
+    width: 6px !important;
+    height: 140px !important;
+    right: -5px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+/* LEFT BAR */
+.bar.left {
+    width: 6px !important;
+    height: 100px !important;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 200ms ease-in-out;
+}
+
+.image-trainer:hover .bar.left {
+    width: 6px !important;
+    height: 140px !important;
+    left: -5px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+/* TOP BAR */
+.bar.top {
+    width: 80px !important;
+    height: 6px !important;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* BOTTOM BAR */
+.bar.bottom {
+    width: 80px !important;
+    height: 6px !important;
+    bottom: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 200ms ease-in-out;
+}
+
+.image-trainer:hover .bottom {
+    width: 180px !important;
+    height: 6px !important;
+    bottom: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/***********************/
+
+/* HOVER INFO */
+.trainer-info {
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+.image-trainer:hover .trainer-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE SETTINGS */
+@media (max-width: 991Px) {
+    .trainer-info {
+        bottom: 50px;
+    }
+
+    .image-trainer:hover .bar.right {
+        top: 55%;
+    }
+
+    .image-trainer:hover .bar.left {
+        top: 55%;
+    }
+
+    .bar.top {
+        top: 20px;
+    }
+
+    .bar.bottom {
+        bottom: 18px;
+    }
+
+    .image-trainer:hover .bottom {
+        bottom: 18px;
+    }
+}
+
+@media (max-width: 768Px) {
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .image-trainer {
+        position: relative;
+        width: 320px;
+        height: 384px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-trainer img {
+        width: 100%;
+        height: auto;
+        border: 2px solid var(--primary-color);
+        border-radius: 5px;
+    }
+
+    .trainer-info {
+        bottom: 20px;
+    }
+
+    .image-trainer:hover .bar.right {
+        top: 60%;
+    }
+
+    .image-trainer:hover .bar.left {
+        top: 60%;
+    }
+
+    .bar.top {
+        top: -10px;
+    }
+
+    .bar.bottom {
+        bottom: -11px;
+    }
+
+    .image-trainer:hover .bottom {
+        bottom: -11px;
+    }
+}
+
+@media (max-width: 576px) {
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .image-trainer {
+        position: relative;
+        width: 320px;
+        height: 384px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-trainer img {
+        width: 100%;
+        height: auto;
+        border: 2px solid var(--primary-color);
+        border-radius: 5px;
+    }
+
+    .trainer-info {
+        bottom: 20px;
+    }
+
+    .image-trainer:hover .bar.right {
+        top: 60%;
+    }
+
+    .image-trainer:hover .bar.left {
+        top: 60%;
+    }
+
+    .bar.top {
+        top: -10px;
+    }
+
+    .bar.bottom {
+        bottom: -11px;
+    }
+
+    .image-trainer:hover .bottom {
+        bottom: -11px;
+    }
+}

@@ -1,0 +1,105 @@
+/* GENERAL COLOR SETTINGS */
+:root {
+  --primary-color: #F39C11;
+  --secondary-color: #355592;
+  --font-color-1: #272727;
+  --font-color-2: #1b1b1b;
+  --font-color-3: #fff;
+  --background-color-1: #FFFFFF;
+  --background-color-2: #F1F8FF;
+  --clip-mask: #F6F6F6;
+  --speech-bubble: #8196BC;
+}
+
+/* ALL SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML SETTINGS FOR SCROLL BEHAVIORS */
+html {
+  scroll-padding-top: 80px; 
+  scroll-behavior: smooth;
+}
+
+/* BODY SETTINGS */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--font-color-1);
+  background-color: var(--background-color-1);
+  position: relative;
+  min-height: 100%;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* UL SETTINGS */
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* LIST SETTINGS */
+li {
+  padding: 5px 0;
+}
+
+/* TITLE SETTINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+h1 { 
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+/* PARAGRAPH SETTINGS */
+p {
+  margin-bottom: 1rem;
+}
+
+/* SCREEN BREAKPOINTS */
+@media (min-width: 576px) { 
+  .container { max-width: 540px; }
+}
+@media (min-width: 768px) { 
+  .container { max-width: 720px; }
+}
+@media (min-width: 992px) { 
+  .container { max-width: 960px; }
+}
+@media (min-width: 1200px) { 
+  .container { max-width: 1140px; }
+}
+@media (min-width: 1400px) { 
+  .container { max-width: 1320px; }
+}
+
+
+

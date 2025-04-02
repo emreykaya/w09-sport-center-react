@@ -1,0 +1,189 @@
+/* CALCULATOR SETTINGS */
+#calculator {
+    background-color: var(--background-color-1);
+    padding: 42px;
+}
+
+#calculator .calc-container {
+    display: flex;
+    gap: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+/* FORM */
+#calculator .calc-container form {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: start;
+}
+
+/* INPUT */
+#calculator .calc-container input {
+    padding: 4px 6px;
+    border-radius: 5px;
+    border: 2px solid #8b8b8b;
+    margin: 1px 0 0 10px;
+    caret-color: var(--primary-color);
+}
+
+/* TITLES */
+#calculator .calc-container h3 {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 20px 0;
+    color: var(--secondary-color);
+}
+
+/* TEXT */
+#calculator .calc-container p {
+    font-weight: 600;
+    text-align: justify;
+    margin: 0;
+}
+
+/* IMAGE CONTAINER */
+#calculator .image-container {
+    gap: 0;
+}
+
+#calculator .calc-container .image-container {
+    position: relative;
+    flex-direction: column;
+}
+
+#calculator .calc-container .image-container h5 {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* IMAGE */
+#calculator .calc-container img {
+    width: 500px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+/* TRIANGLE SETTINGS */
+#calculator .calc-container .triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid var(--primary-color); 
+    position: absolute;
+    bottom: -20px;
+    left: 35px;
+}
+
+/* HIDDING ARROWS FOR NUMBER INPUT */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: none; 
+}
+
+/* RESPONSIVE SETTINGS */
+@media (max-width: 1280px) {
+    #calculator .calc-container {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    #calculator .calc-container h3 {
+        font-size: 48px;
+        text-align: center;
+        font-weight: 800;
+        color: var(--secondary-color);
+    }
+
+    #calculator .calc-container form {
+        display: block;
+        gap: 5px;
+        margin: 0 40px 0 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    #calculator .calc-container .image-container h5 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768Px) {
+    #calculator .calc-container {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    #calculator .calc-container h3 {
+        font-size: 48px;
+        text-align: center;
+        font-weight: 800;
+        color: var(--secondary-color);
+    }
+
+    #calculator .calc-container form {
+        display: block;
+        gap: 5px;
+        margin: 0 40px 0 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    #calculator .calc-container .image-container h5 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    #calculator .calc-container {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    #calculator .calc-container h3 {
+        font-size: 48px;
+        text-align: center;
+        font-weight: 800;
+        color: var(--secondary-color);
+    }
+
+    #calculator .calc-container form {
+        display: block;
+        gap: 5px;
+        margin: 0 40px 0 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    #calculator .calc-container .image-container h5 {
+        text-align: center;
+    }
+}

@@ -1,0 +1,113 @@
+/* TESTIMONIALS SETTINGS */
+#testimonials {
+    background-color: var(--background-color-2);
+    padding: 40px 0;
+}
+
+/* BOXES */
+#testimonials .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ITEMS */
+#testimonials .boxes .box-item {
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-1);
+}
+
+/* TITLE */
+#testimonials .boxes .box-item h5 {
+    margin: 0 0 16px;
+    color: var(--secondary-color);
+    font-weight: 800;
+}
+
+/* SUB-TEXT */
+#testimonials .boxes .box-item p {
+    margin: 0;
+    font-size: 20px;
+    color: var(--font-color-1);
+    font-weight: 800;
+}
+
+/* RESPONSIVE SETTINGS */
+@media (max-width: 768px) {
+    #testimonials .boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #testimonials .boxes .box-item {
+        width: 350px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-color-1);
+    }
+
+    #testimonials .boxes .box-item h5 {
+        margin: 0 0 16px;
+        color: var(--secondary-color);
+        font-weight: 800;
+        font-size: 20px;
+    }
+
+    #testimonials .boxes .box-item p {
+        margin: 0;
+        font-size: 14px;
+        color: var(--font-color-1);
+        font-weight: 800;
+    }
+}
+
+@media (max-width: 576px) {
+    #testimonials {
+        background-color: var(--background-color-2);
+        padding: 30px 0;
+    }
+
+    #testimonials .boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #testimonials .boxes .box-item {
+        width: 350px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-color-1);
+    }
+
+    #testimonials .boxes .box-item h5 {
+        margin: 0 0 16px;
+        color: var(--secondary-color);
+        font-weight: 800;
+        font-size: 26px;
+    }
+
+    #testimonials .boxes .box-item p {
+        margin: 0;
+        font-size: 24px;
+        color: var(--font-color-1);
+        font-weight: 800;
+    }
+}
